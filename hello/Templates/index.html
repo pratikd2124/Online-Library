@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+
+    {% block title %}Home{% endblock title %} 
+    {% block body %}
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('./static/images/pexels-photo-19077851.jpeg');
+            background-size: cover;
+            
+        }
+    
+        h2{
+        text-transform: uppercase;
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow:8px 8px 8px rgba(0, 0, 0, 0.644);
+    }
+    .heading{
+        position: absolute;
+        display: flex;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    .container1 .intro{
+        position: absolute;
+        display: flex;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .container1 .intro p{
+        color: wheat;
+        font-family: 'Bebas Neue'; 
+        text-shadow:8px 8px 8px rgba(0, 0, 0, 0.644);
+        font-size: 25px;
+    
+    }
+
+    
+
+    
+
+    
+    </style>
+ </head>
+ <body>
+    <div class="heading">
+        <h2>Online Library</h2>
+    </div>
+        <div class="container1">
+            <div class="intro">
+                <p>
+                    Online Library Project is about Providing more free boks to students, Teachers,<br> People in search of ebooks,etc.
+                    We decided to provide as much as free books we can. <br>
+                    Members can add books if they want.
+                </p>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+                </style>
+            </div>
+        </div>
+        <div class="container my-5 pt-5 mt-5">
+          <br><br><br><br><br><br><br><br><br><br>
+          <h2>Various Genre Books</h2>
+    
+      
+          <hr class="my-4">
+      
+          <!--Carousel Wrapper-->
+          <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+      
+            <!--Controls-->
+            <div class="controls-top">
+              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+              <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <!--/.Controls-->
+      
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+              <li data-target="#multi-item-example" data-slide-to="1"></li>
+              <li data-target="#multi-item-example" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+      
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+      
+              <!--First slide-->
+              <div class="carousel-item active">
+      
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/scifi.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Sci fi</h4>
+                        <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/programming.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Programming</h4>
+                          <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/Religion.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Religion</h4>
+                        <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <!--/.First slide-->
+      
+              <!--Second slide-->
+              <div class="carousel-item">
+      
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/educational.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Educational</h4>
+                        <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/thriller.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Thriller</h4>
+                        <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/medicine.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Medicine</h4>
+                        <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <!--/.Second slide-->
+      
+              <!--Third slide-->
+              <div class="carousel-item">
+      
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/biography.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Biography</h4>
+                        <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/horror.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Horror</h4>
+                        <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="static/images/Drama.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Drama</h4>
+                        <a class="btn btn-primary">View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <!--/.Third slide-->
+      
+            </div>
+            <!--/.Slides-->
+      
+          </div>
+          <!--/.Carousel Wrapper-->
+      
+      
+        </div>
+
+        
+    {% endblock body %}
+    
+
